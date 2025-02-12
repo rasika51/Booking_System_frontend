@@ -1,40 +1,55 @@
+/* Tailwind Global Styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Remove default margins from body and html */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* Body styling */
+body {
+  display: flex;
+  justify-content: center; /* Ensure it centers horizontally */
+  align-items: center; /* Ensure it centers vertically */
+  background-color: #242424; /* Or adjust based on your design */
+}
+
+/* Link styling */
 a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
 }
+
+/* Placeholder color for date-picker input */
+.date-picker::placeholder {
+  color: black; /* Placeholder text color */
+}
+
+/* Hover effects for links */
 a:hover {
   color: #535bf2;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
+/* Button styling */
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -46,23 +61,82 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
+/* Hover effect for buttons */
 button:hover {
   border-color: #646cff;
 }
+
+/* Focus outline for buttons */
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* Custom colors based on Tailwind configuration */
+
+/* Background Color Adjustments */
+.bg-primary {
+  background-color: #10B981; /* Main Green from Tailwind */
+}
+
+.bg-primary-light {
+  background-color: #A7F3D0; /* Light Green from Tailwind */
+}
+
+.bg-primary-dark {
+  background-color: #047857; /* Dark Green from Tailwind */
+}
+
+.bg-secondary {
+  background-color: #F0FDF4; /* Light background green */
+}
+
+.bg-accent {
+  background-color: #34D399; /* Accent Green for buttons and highlights */
+}
+
+/* Text Color Adjustments */
+.text-primary {
+  color: #10B981; /* Main Green from Tailwind */
+}
+
+.text-primary-light {
+  color: #A7F3D0; /* Light Green */
+}
+
+.text-primary-dark {
+  color: #047857; /* Dark Green */
+}
+
+.text-accent {
+  color: #34D399; /* Accent Green */
+}
+
+.text-white {
+  color: white; /* Standard white text */
+}
+
+.text-black {
+  color: black; /* Standard black text */
+}
+
+.text-gray {
+  color: #646cff; /* Gray text for links */
+}
+
+/* Button Custom Styles */
+button.primary {
+  background-color: #10B981; /* Main Green */
+  border-color: #10B981;
+}
+
+button.primary:hover {
+  background-color: #047857; /* Dark Green on hover */
+  border-color: #047857;
+}
+
+/* Focus styles for links */
+a:focus-visible {
+  outline: 2px solid #10B981; /* Focus with main green */
 }
