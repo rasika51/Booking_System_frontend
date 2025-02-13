@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import LandingPage from './components/LandingPage';  // Your landing page component
-import AuthenticationPage from './components/AuthenticationPage'; // Your auth page component
-import Dashboard from './components/Dashboard'; // Your dashboard component
+import LandingPage from './components/LandingPage';  
+import AuthenticationPage from './components/AuthenticationPage'; 
+import Dashboard from './components/Dashboard';
 import BookAppointmentPage from "./components/BookAppointmentPage";
 import BookedAppointments from "./components/BookedAppointments";
 

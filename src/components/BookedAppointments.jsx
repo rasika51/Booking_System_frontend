@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import NavBar from "./Nav"; // Import the NavBar component
+import NavBar from "./Nav";
 
 const BookedAppointments = () => {
   const [appointments, setAppointments] = useState([
@@ -30,7 +30,7 @@ const BookedAppointments = () => {
     const updatedAppointments = [...appointments];
     updatedAppointments[editingIndex] = updatedAppointment;
     setAppointments(updatedAppointments);
-    setEditingIndex(null); // Reset the editing state
+    setEditingIndex(null); 
   };
 
   const handleChange = (e) => {
@@ -40,7 +40,7 @@ const BookedAppointments = () => {
 
   return (
     <div className="relative h-screen w-screen flex flex-col items-center justify-center py-8  mx-4 sm:mx-8 lg:mx-16">
-      <NavBar /> {/* Include the NavBar */}
+      <NavBar /> 
       
       <h1 className="text-4xl font-bold -mt-20 sm:mb-6 md:mb-12">Booked Appointments</h1>
 

@@ -19,7 +19,7 @@ const LandingPage = () => {
         />
         
         <motion.h1
-          className="text-4xl md:text-4xl font-bold -mt-16" // Adjusted margin here
+          className="text-4xl md:text-4xl font-bold -mt-16" 
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 1 }}

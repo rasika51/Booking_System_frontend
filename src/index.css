@@ -27,9 +27,9 @@ html, body {
 /* Body styling */
 body {
   display: flex;
-  justify-content: center; /* Ensure it centers horizontally */
-  align-items: center; /* Ensure it centers vertically */
-  background-color: #242424; /* Or adjust based on your design */
+  justify-content: center; 
+  align-items: center;
+  background-color: #242424; 
 }
 
 /* Link styling */
@@ -41,7 +41,7 @@ a {
 
 /* Placeholder color for date-picker input */
 .date-picker::placeholder {
-  color: black; /* Placeholder text color */
+  color: black; 
 }
 
 /* Hover effects for links */

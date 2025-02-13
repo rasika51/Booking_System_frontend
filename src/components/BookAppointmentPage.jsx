@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import NavBar from "./Nav"; // Import the NavBar component
+import NavBar from "./Nav"; 
 
 const BookAppointmentPage = () => {
   const navigate = useNavigate();
@@ -22,14 +22,14 @@ const BookAppointmentPage = () => {
   // Handle form submit
   const handleSubmit = (e) => {
     e.preventDefault();
-    // In a real app, you would send this data to the server
+    
     console.log("Booking Details:", userDetails);
     navigate("/"); // Redirect to home after booking
   };
 
   return (
     <div className="min-h-screen w-full flex flex-col items-center justify-center py-8">
-      <NavBar /> {/* Include the NavBar component */}
+      <NavBar /> 
       
       <h1 className="text-4xl font-bold mb-8">Book Appointment</h1>
       <form onSubmit={handleSubmit} className="w-full max-w-md space-y-4">

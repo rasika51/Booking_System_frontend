@@ -12,7 +12,6 @@ const NavBar = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-screen bg-primary p-4 flex justify-between items-center shadow-lg z-50">
-      {/* Logo Section (Hide on small screens when menu is open) */}
       {!isMenuOpen && (
         <h1 className="text-white text-2xl font-bold">SLOTBOOKER</h1>
       )}
